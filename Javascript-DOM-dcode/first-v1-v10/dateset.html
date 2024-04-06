@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="title">Dataset</h2>
+    <div id="myDiv" data-name="domenic" data-started-coding-at="15">
+      Sample Text
+    </div>
+  </body>
+  <script>
+    const myDiv = document.getElementById("myDiv");
+    myDiv.dataset.name = "Bob";
+    console.log(myDiv.dataset);
+  </script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        padding: 20px;
+        background-color: red;
+        font-weight: bold;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="title">Element.outerHTML - JS DOM - licode</h2>
+
+    <div id="container1">
+      <div class="box">Container 1 - Box 1</div>
+    </div>
+    <div id="container2">
+      <div class="box">Container 2 - Box 1</div>
+    </div>
+  </body>
+
+  <script>
+    // Query Selector lets you find the first element that matches the css selector
+
+    const container2 = document.querySelector("#container2");
+    const result = container2.querySelector(".box");
+    console.log(result);
+    // const h2Title = document.getElementById("title");
+
+    // console.log(h2Title.outerHTML);
+
+    // change the outerHTML
+    h2Title.outerHTML =
+      "<div>i have changed Element.outerHTML - JS DOM - licode</div>";
+  </script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ------------------end function scope----------
+      function doSomething() {
+        let x = 10;
+        const y = 20;
+        var z = 30;
+
+        console.log(x, y, z);
+      }
+
+      //   console.log(x, y, z); cant from out side of the scope
+      doSomething();
+
+      let x = "A";
+      const y = "B";
+      var z = "C";
+
+      function testScope() {
+        console.log(x, y, z);
+      }
+
+      testScope();
+
+      //first principal   // if variable derclare outside or inside of the function it is acceseble from the function
+      //first principal  // but  cannot access this variable outside a scope of this function
+
+      function outsidefunction() {
+        let a = 10;
+        const b = 20;
+        var c = 30;
+      }
+
+      console.log(a, b, c);
+
+      outsidefunction();
+      // ------------------end function scope----------
+      // ------------------2nd principal function scope----------
+    </script>
+  </body>
+</html>

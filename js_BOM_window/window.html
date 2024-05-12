@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="width"></div>
+    <div id="height"></div>
+    <div id="href"></div>
+    <div>
+      <input type="button" value="Open window" onclick="openWindow()" />
+    </div>
+    <div>
+      <input type="button" value="Close window" onclick="closeWindow()" />
+    </div>
+
+    <script>
+      let myWindow;
+      const width = document.getElementById("width");
+      const height = document.getElementById("height");
+      const href = document.getElementById("href");
+
+      width.innerHTML = "Window inner width is " + window.innerWidth;
+      height.innerHTML = "Window inner height is " + window.innerHeight;
+      href.innerHTML = "Window location :" + location.href;
+
+      function openWindow() {
+        myWindow = window.open("https://google.com");
+      }
+      function closeWindow() {
+        myWindow.colse();
+      }
+    </script>
+  </body>
+</html>

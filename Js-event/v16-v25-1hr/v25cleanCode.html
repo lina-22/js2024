@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function getThemeColors() {
+        let currentHour = new Date().getHours();
+        let textColors;
+        let backgroundColor;
+
+        if (currentHour > 20 && currentHour < 7) {
+          textColor = "#ffffff";
+          backgroundColor = "#222222";
+        } else {
+          textColor = "#22222";
+          backgroundColor = "#ffffff";
+        }
+
+        return {
+          textColor: textColor,
+          backgroundColor,
+        };
+      }
+    </script>
+  </body>
+</html>

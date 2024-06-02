@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>`onclick` Example</title>
+    <style>
+      #box {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+    <!-- <div
+      id="box"
+      onmouseover="alert('Hover !')"
+      onclick="alert('Hey, ! Event Handling')"></div> -->
+
+    <!-- <script>
+      const boxDiv = document.getElementById("box");
+
+      boxDiv.addEventListener("click", function (e) {
+        alert("Hey, event code");
+      });
+    </script> -->
+
+    <!-- <script>
+      const boxDiv = document.getElementById("box");
+
+      boxDiv.addEventListener("click", handleFunction);
+
+      function handleFunction(e) {
+        console.log("hello");
+      }
+    </script> -->
+    <!-- <script>
+      const boxDiv = document.getElementById("box");
+
+      boxDiv.addEventListener("click", handleFunction);
+
+      function handleFunction(e) {
+        console.log(this);
+      }
+    </script> -->
+
+    <script>
+      const boxDiv = document.getElementById("box");
+
+      boxDiv.addEventListener("click", function (e) {
+        console.log(this);
+      });
+
+      boxDiv.addEventListener("click", (e) => {
+        console.log(this);
+      });
+    </script>
+  </body>
+</html>

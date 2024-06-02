@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>"Offline" Event</title>
+    <style>
+      #div {
+        width: 200px;
+        height: 200px;
+        background: red;
+        transition: width 3s;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btnLoad">Load Image</button>
+    <img id="log" src="" alt="Yeat to be loaded ....." />
+    <script>
+      const btnLoad = document.getElementById("btnLoad");
+      const logo = document.getElementById("logo");
+
+      btnLoad.addEventListener("click", () => {
+        logo.src = "lina.jpg";
+      });
+      logo.addEventListener("load", () => {
+        logo.src = "lina.jpg";
+      });
+    </script>
+  </body>
+</html>

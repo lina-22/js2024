@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maps vs. Objects in JavaScript - What's the Difference?</title>
+  </head>
+  <body>
+    <script>
+      const personObject = {
+        name: "Lina",
+        age: 35,
+        occupation: "Software Developer",
+      };
+
+      const personMap = new Map();
+
+      personMap.set("name", "Leena");
+      personMap.set("age", 39);
+      personMap.set("occupation", "dev");
+
+      console.log(personObject);
+      console.log(personMap);
+    </script>
+  </body>
+</html>
